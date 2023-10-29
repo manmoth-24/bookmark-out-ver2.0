@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="help.css">
+    </head>
+    <body>
+        <main>
+            <h1 class="main-title">ブックマーク.outの使い方</h1>
+            <div class="main-syn">
+                <div class="title-exp">
+                    <h3>
+                        <span id="site-explanation-beginning">ブックマーク.outは！</span><br>
+                        ダウンロードして自分なりにアレンジする！<br>
+                        サイトのステーション!!
+                    </h3>
+                </div>
+                <div class="exp-syn">
+                    <div class="howToUse">
+                        <h2>使い方</h2>
+                        <div class="one-of-how-to-use">
+                            <h3>ブックマーク.outをダウンロードする。</h3>
+                            <ol>
+                                <script>
+                                    let useWhenMake = [
+                                        {word: 'このサイトに飛ぶ！→',link: "https://github.com/manmoth-24/" ,
+                                        img: '../Images/スクリーンショット 2023-10-29 163206.png'},
+                                        {word: 'そしたらいくつか作品のある中で、「bookmark-out-ver2.0」という作品をクリックします',
+                                        img: ''}
+                                    ]
+
+                                    const makeList = () =>{
+                                        let count = 1;
+                                        useWhenMake.forEach((block) =>{
+                                        if (block.link != null){
+                                            document.writeln(`<li>${block.word}<a href="${block.link}">${block.link}</a></li>`)
+                                            document.writeln(`<p><img src="${block.img}" class="how-to-img"><span class="img-des">←No.${count}</span></p>`)
+                                            count ++;
+                                        }else{
+                                            document.writeln(`<li>${block.word}</li>`)
+                                            document.writeln(`<p><img src="${block.img}" class="how-to-img"><span class="img-des">←No.${count}</span></p>`)
+                                            count ++;
+                                        }
+                                    })
+                                    }
+
+                                    makeList();
+                                </script>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-menu">
+                <h1>メニュー</h1>
+                <p class="it-has-no">なにもないようだ</p>
+            </div>
+            <script src="help_animation.js"></script>
+        </main>
+    </body>
+</html>

@@ -7,7 +7,7 @@ let important_links = [
     {name: "youtube", link: "https://www.youtube.com/"},
     {name: "Google翻訳", link: "https://translate.google.com/?sl=ja&tl=en&text=%E7%BF%BB%E8%A8%B3&op=translate"},
     {name: "Google図形描画", link: "https://docs.google.com/drawings/?hl=ja"},
-    {name: "電卓", link: "https://www.desmos.com/scientific?lang=ja"}
+    {name: "電卓", link: "https://www.desmos.com/scientific?lang=ja"},
 ]
 
 let linksWithKey = [
